@@ -3,4 +3,4 @@ zarplata2 = int(input('Укажите зарплату второго челов
 zarplata3 = int(input('Укажите зарплату третьего человека? '))
 
 trata = (zarplata1 + zarplata2 + zarplata3) // 90
-print('Вы можете тратить по ' + str(trata) + ' рублей в день')e5rtdrte5t
+print('Вы можете тратить по ' + str(trata) + ' рублей в день')

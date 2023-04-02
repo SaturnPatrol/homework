@@ -6,16 +6,16 @@ bet_log = []
 while (balance > 999):
         predict = int(input('Угадай число..? '))
         result = random.choice(kubik)
+        bet_log.append(
+            'Игра загадала: ' + str(result) + ', моя попытка: ' + str(predict) + ', на счету: ' + str(balance))
         if predict == result:
             balance += 1000
             print('Игра загадала: ' + str(result) + ', моя попытка: ' + str(predict) + ', на счету: ' + str(balance))
-            bet_log.append('Игра загадала: ' + str(result) + ', моя попытка: ' + str(predict) + ', на счету: ' + str(balance))
         elif (predict < 2 or predict > 12):
             print('некорректный кубик')
         else:
             balance -= 1000
             print('Игра загадала: ' + str(result) + ', моя попытка: ' + str(predict) + ', на счету: ' + str(balance))
-            bet_log.append('Игра загадала: ' + str(result) + ', моя попытка: ' + str(predict) + ', на счету: ' + str(balance))
 
 #Выводим журнал ставок построчно:
 print('---------------------------')
